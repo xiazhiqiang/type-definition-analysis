@@ -1,0 +1,32 @@
+{
+  "name": "type-definition-analysis",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "bin": {
+    "typed-analysis": "dist/bin/typed.js"
+  },
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "keywords": [],
+  "authors": [],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "father": "^4.1.2"
+  },
+  "dependencies": {
+    "commander": "^9.4.1"
+  }
+}
